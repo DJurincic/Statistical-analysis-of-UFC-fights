@@ -33,7 +33,7 @@ jobs:
         python scripts/generate_md_summary.py report.json > test-report.md
 
     - name: Upload report as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: pytest-markdown-report
         path: test-report.md
