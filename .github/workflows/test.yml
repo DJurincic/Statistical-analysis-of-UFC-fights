@@ -26,7 +26,7 @@ jobs:
 
     - name: Run tests and generate JSON report
       run: |
-        pytest --json-report --json-report-file=report.json
+        pytest --json-report --json-report-file=report.json test.py
 
     - name: Generate Markdown summary
       run: |
