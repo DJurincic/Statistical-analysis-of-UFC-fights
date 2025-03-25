@@ -30,7 +30,7 @@ jobs:
       continue-on-error: true
     - name: Generate Markdown summary
       run: |
-        python scripts/generate_md_summary.py report.json > test-report.md
+        python generate_md_summary.py report.json > test-report.md
 
     - name: Upload report as artifact
       uses: actions/upload-artifact@v4
